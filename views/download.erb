@@ -1,0 +1,24 @@
+<h1>Downloading <%= title %></h1>
+<object id="downloadTrigger" type="application/downloadTrigger" width="0" height="0"></object>
+<script type="text/javascript">
+  <![CDATA[
+  (function () {
+    function downloadVideo() {
+      log('Downloading Content Access Descriptor (CAD)');
+      ajaxGet("<%= cad_url %>", {
+        success:function (cad) {
+          log('CAD downloaded: ' + cad);
+          var downloadTrigger = document.getElementById('downloadTrigger');
+          downloadTrigger.checkDownloadPossible(cad);
+          downloadTrigger.registerDownload(cad, true);
+        },
+        error:function () {
+          log('Error downloading CAD');
+        }
+      });
+    }
+
+    drmRegister(downloadVideo);
+  })();
+  ]]>
+</script>

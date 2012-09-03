@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="application/ce-html+xml; charset=UTF-8"/>
+    <title>Marlin NetTV Example</title>
+    <script type="text/javascript" src="<%= url('/app.js') %>"></script>
+    <link rel="stylesheet" href="<%= url('/app.css') %>"/>
+</head>
+<body>
+<div id="log"></div>
+<object id="drmAgent" type="application/drmAgent" width="0" height="0"></object>
+
+<%# Include the page content. %>
+<%= yield %>
+
+<div class="footer"><a href="https://github.com/FDVSolutions/marlin-nettv-example">Fork me on GitHub</a></div>
+</body>
+</html>

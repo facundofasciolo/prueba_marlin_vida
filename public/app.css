@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+#log {
+    bottom: 50px;
+    left: 50px;
+    width: 960px;
+    max-height: 300px;
+    color: green;
+    position: absolute;
+    z-index: 100;
+    visibility: hidden;
+    overflow: hidden;
+    border: 1px dashed green;
+}
+
+#drmAgent {
+    width: 1;
+    height: 1;
+}
+
+h1 {
+    text-align: center;
+}
+
+.footer {
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+:focus {
+    border: 1px solid white;
+}

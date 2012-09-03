@@ -1,0 +1,25 @@
+<Contents>
+    <ContentItem>
+        <Title><%= title %></Title>
+        <Synopsis><%= synopsis %></Synopsis>
+        <OriginSite><%= request.base_url %></OriginSite>
+        <OriginSiteName>Marlin NetTV Example</OriginSiteName>
+        <ContentID><%= id %></ContentID>
+        <ContentURL DRMSystemID="urn:dvb:casystemid:19188"
+                    TransferType="streaming"
+                    Size="2282172"
+                    Duration="00:00:15"
+                    MD5Hash="b00a7ae428c206286ea90942a824b8fd"
+                    MIMEType="application/vnd.oma.drm.dcf"
+                    MediaFormat="MP4_DCF"
+                    VideoCoding="AVC_SD_25"
+                    AudioCoding="AAC-LC"><%= url %></ContentURL>
+        <ArtworkURL ProfileID="JPEG_SM" ArtworkType="cover_art" width="431" height="282">http://laughingsquid.com/wp-content/uploads/nyan.jpg</ArtworkURL>
+        <DRMControlInformation>
+            <DRMSystemID>urn:dvb:casystemid:19188</DRMSystemID>
+            <DRMContentID><%= id %></DRMContentID>
+            <SilentRightsURL><%= rights_url %></SilentRightsURL>
+        </DRMControlInformation>
+        <DefaultLanguage>http://devtest.mpsdev.com/blueport_ContentData/</DefaultLanguage>
+    </ContentItem>
+</Contents>
